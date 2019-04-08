@@ -829,7 +829,7 @@
         var gitment = new Gitmint({
             id: window.location.pathname, 
             owner: 'Arturo',
-            repo: 'https://arturorutra.github.io/',
+            repo: 'arturorutra.github.io',
             
             lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
@@ -844,7 +844,11 @@
       }
 
       
-      renderGitment();
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
       
       </script>
     
