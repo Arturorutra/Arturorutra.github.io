@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="Arturo">
 <meta property="og:description" content="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。加法器  —&amp;gt;  （A+B=C）计算机是指输入、处理和输出的机器，单片机(MCU)当然可以运算，但单片机只又称为微型控制单元，做运算器的精度不会很高，博主抱着学习的心态来分享。让计算器输出结果 C ，自然要先输入数据 A（变量）、运">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-19T00:42:11.833Z">
+<meta property="og:updated_time" content="2019-04-19T00:43:05.120Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="手把手写加法器（草稿）">
 <meta name="twitter:description" content="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。加法器  —&amp;gt;  （A+B=C）计算机是指输入、处理和输出的机器，单片机(MCU)当然可以运算，但单片机只又称为微型控制单元，做运算器的精度不会很高，博主抱着学习的心态来分享。让计算器输出结果 C ，自然要先输入数据 A（变量）、运">
@@ -387,7 +387,7 @@
 </code></pre>
 <p>ATTENTION:当按键被按下时，它所在的行和列就连在了一起，所在行的IO口高电平就拉低变为低电平。</p>
 <h3 id="输入状态——-gt-state"><a href="#输入状态——-gt-state" class="headerlink" title="输入状态——&gt;state"></a>输入状态——&gt;state</h3><p>上面的三个步骤就是我们捕获输入返回给变量A的过程，下一个要输入的是运算符。如果对单片机不够了解的话可能会认为再按一下按键不就OK了吗？<br>因为按键被按下的时间中，单片机会一直返回这个值，变量A，运算符，变量B，符号‘=’都被你按的那一个键的返回值。本此使用单片机的机械周期为（1/11.0592M 秒），即每返回一个按键值大约需要9us（扫描函数指令按100条计算），以我目前的速度还差不少（0.0）。所以这其中涉及到一个状态检测的问题，要输出结果C，需要输入变量A，B，运算符和符号’=’,（单位加法器）也就是说要连续返回四次，即4个状态。假设初始状态state=0，按键返回值为keynum。</p>
-<pre><code class="bash">1. 当state=0时，才能把keynum赋值给A，复制后state=1，同时数码管显示输入值，即A。
+<pre><code class="bash">1. 当state=0时，才能把keynum赋值给A，赋值后state=1，同时数码管显示输入值，即A。
 2. 当state=1时，才能把keynum赋值给运算符，赋值后state=2。
 3. 当state=2时，才能把keynum赋值给B，赋值后state=3，同时数码管显示输入值，即B。
 4. 当state=1时，才能把keynum赋值给等于符号，赋值后state=4，同时单片机处理运算，通过数码管显示结果。
