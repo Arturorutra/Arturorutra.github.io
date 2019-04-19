@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。加法器  —&amp;gt;  （A+B=C）计算机是指输入、处理和输出的机器，单片机(MCU)当然可以运算，但单片机只又称为微型控制单元，做运算器的精度不会很高，博主抱着学习的心态来分享。让计算器输出结果 C ，自然要先输入数据 A（变量）、运">
+<meta name="description" content="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。文末附上源码及流程图，欢迎大家检验加法器  —&amp;gt;  （A+B=C）计算机是指输入、处理和输出的机器，单片机(MCU)当然可以运算，但单片机只又称为微型控制单元，做运算器的精度不会很高，博主抱着学习的心态来分享。让计算器输出结果 C">
 <meta property="og:type" content="article">
 <meta property="og:title" content="手把手写加法器（草稿）">
 <meta property="og:url" content="http://yoursite.com/2019/04/01/Adder/index.html">
 <meta property="og:site_name" content="Arturo">
-<meta property="og:description" content="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。加法器  —&amp;gt;  （A+B=C）计算机是指输入、处理和输出的机器，单片机(MCU)当然可以运算，但单片机只又称为微型控制单元，做运算器的精度不会很高，博主抱着学习的心态来分享。让计算器输出结果 C ，自然要先输入数据 A（变量）、运">
+<meta property="og:description" content="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。文末附上源码及流程图，欢迎大家检验加法器  —&amp;gt;  （A+B=C）计算机是指输入、处理和输出的机器，单片机(MCU)当然可以运算，但单片机只又称为微型控制单元，做运算器的精度不会很高，博主抱着学习的心态来分享。让计算器输出结果 C">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-19T00:43:05.120Z">
+<meta property="og:updated_time" content="2019-04-19T00:45:55.065Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="手把手写加法器（草稿）">
-<meta name="twitter:description" content="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。加法器  —&amp;gt;  （A+B=C）计算机是指输入、处理和输出的机器，单片机(MCU)当然可以运算，但单片机只又称为微型控制单元，做运算器的精度不会很高，博主抱着学习的心态来分享。让计算器输出结果 C ，自然要先输入数据 A（变量）、运">
+<meta name="twitter:description" content="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。文末附上源码及流程图，欢迎大家检验加法器  —&amp;gt;  （A+B=C）计算机是指输入、处理和输出的机器，单片机(MCU)当然可以运算，但单片机只又称为微型控制单元，做运算器的精度不会很高，博主抱着学习的心态来分享。让计算器输出结果 C">
 
 
 
@@ -379,7 +379,7 @@
       
 
       
-        <h2 id="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。"><a href="#基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。" class="headerlink" title="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。"></a><strong>基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过<a href="mailto:Arturorutras@hotmail.com" target="_blank" rel="noopener">邮箱</a>联系我。</strong></h2><h2 id="加法器-—-gt-（A-B-C）"><a href="#加法器-—-gt-（A-B-C）" class="headerlink" title="加法器  —&gt;  （A+B=C）"></a>加法器  —&gt;  （A+B=C）</h2><p>计算机是指输入、处理和输出的机器，单片机(MCU)当然可以运算，但单片机只又称为微型控制单元，做运算器的精度不会很高，博主抱着学习的心态来分享。让计算器输出结果 C ，自然要先输入数据 A（变量）、运算符号    +    -    *    /    、B（变量），然后让计算器中的单片机计算出结果C，最后用数码管显示结果C。按键即输入，数码管显示即输出。</p>
+        <h2 id="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。文末附上源码及流程图，欢迎大家检验"><a href="#基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。文末附上源码及流程图，欢迎大家检验" class="headerlink" title="基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。文末附上源码及流程图，欢迎大家检验"></a><strong>基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过<a href="mailto:Arturorutras@hotmail.com" target="_blank" rel="noopener">邮箱</a>联系我。文末附上源码及流程图，欢迎大家检验</strong></h2><h2 id="加法器-—-gt-（A-B-C）"><a href="#加法器-—-gt-（A-B-C）" class="headerlink" title="加法器  —&gt;  （A+B=C）"></a>加法器  —&gt;  （A+B=C）</h2><p>计算机是指输入、处理和输出的机器，单片机(MCU)当然可以运算，但单片机只又称为微型控制单元，做运算器的精度不会很高，博主抱着学习的心态来分享。让计算器输出结果 C ，自然要先输入数据 A（变量）、运算符号    +    -    *    /    、B（变量），然后让计算器中的单片机计算出结果C，最后用数码管显示结果C。按键即输入，数码管显示即输出。</p>
 <h3 id="keyscan-按键扫描-——-gt-输入"><a href="#keyscan-按键扫描-——-gt-输入" class="headerlink" title="keyscan(按键扫描)——&gt;输入"></a>keyscan(按键扫描)——&gt;输入</h3><p>扫描函数这里用普通函数行列扫描，当然为了提升单片机效率可以使用中断函数扫描。通过按键扫描函数返回输入，16个按键对应 数字0-9    与符号     =    ‘清零’    +   -    <em>    /   。在编程之前我们需要了解矩阵键盘的电路，常用16个按键（即4  </em>  4）要通过8个IO口来判断哪一个按键输入，4 * 4就是四行四列。这里检测按键的思路是逐列扫描，判断键盘是否被按下是通过什么呢？当然是通过检测IO口的高低电平了，先把行所连接的IO口设置为高电平，然后把列所连接的IO口分别设置为低电平（假设为P3^0-P3^3，P3 | =（0B00000111,0B00001011,0B00001101,0B00001110）），只有当某一列（若Y=1）为低电平且其它三列为高电平时按下按键，我们才能判断到底是第1（Y=1）列的第几（X）行被按下还是其它列的第几（X）行被按下。当按键被按下时，它所在的行和列就连在了一起，所在行的IO口高电平就拉低变为低电平，这是单片机检测到本来输出为高电平的IO口变为低电平，就认为按键被按下了，它的行数X就知道了，这一列的扫描就结束了，函数把这一按键（X，Y）所对应的编码值返回给主函数。主要步骤：</p>
 <pre><code class="bash">1. 把所有行所连接的IO口输出高电平。（也可设为低电平，只是检测按键被按下时电平相反）
 2. 第Y（Y=1，2，3，4）列的IO口设置输出为低电平，其它三列的IO输出设置为1。（若第一列为检测到相应电平则程序继续检测下一列，即Y+1）
@@ -590,7 +590,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。"><span class="nav-number">1.</span> <span class="nav-text">基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加法器-—-gt-（A-B-C）"><span class="nav-number">2.</span> <span class="nav-text">加法器  —&gt;  （A+B=C）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#keyscan-按键扫描-——-gt-输入"><span class="nav-number">2.1.</span> <span class="nav-text">keyscan(按键扫描)——&gt;输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入状态——-gt-state"><span class="nav-number">2.2.</span> <span class="nav-text">输入状态——&gt;state</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出——-gt"><span class="nav-number">2.3.</span> <span class="nav-text">输出——&gt;</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。文末附上源码及流程图，欢迎大家检验"><span class="nav-number">1.</span> <span class="nav-text">基于STC12C5A80S2开发板的一位加法器（状态机），单片机实现加法器，16键按键输入，输出结果通过数码管显示。欢迎大家共同交流。若有错误，请通过邮箱联系我。文末附上源码及流程图，欢迎大家检验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加法器-—-gt-（A-B-C）"><span class="nav-number">2.</span> <span class="nav-text">加法器  —&gt;  （A+B=C）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#keyscan-按键扫描-——-gt-输入"><span class="nav-number">2.1.</span> <span class="nav-text">keyscan(按键扫描)——&gt;输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入状态——-gt-state"><span class="nav-number">2.2.</span> <span class="nav-text">输入状态——&gt;state</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出——-gt"><span class="nav-number">2.3.</span> <span class="nav-text">输出——&gt;</span></a></li></ol></li></ol></div>
             
 
           </div>
