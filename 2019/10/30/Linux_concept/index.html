@@ -76,7 +76,7 @@
 
 
 
-  <meta name="keywords" content="hexo,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -87,18 +87,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="hexo">
+<meta name="description" content="linux ( Ubuntu / Android / QT …)必须要挂载一个 FS（文件系统），但有些操作系统（如Vxworks / uC-os）就不需要。 嵌入式系统（Android）启动后，BootLoader先运行，检测内存，存储等设备，并设置好处理器等设备的时钟。设置完成后开始引导内核，也就是把zimage (内核)文件拷贝到内存中。拷贝完成后，跳进内核去执行。内核对外部设备进行驱动（">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/03/23/hello-world/index.html">
+<meta property="og:title" content="Linux  Kernel &#x2F; BootLoader &#x2F; FS">
+<meta property="og:url" content="http://yoursite.com/2019/10/30/Linux_concept/index.html">
 <meta property="og:site_name" content="Arturo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="linux ( Ubuntu / Android / QT …)必须要挂载一个 FS（文件系统），但有些操作系统（如Vxworks / uC-os）就不需要。 嵌入式系统（Android）启动后，BootLoader先运行，检测内存，存储等设备，并设置好处理器等设备的时钟。设置完成后开始引导内核，也就是把zimage (内核)文件拷贝到内存中。拷贝完成后，跳进内核去执行。内核对外部设备进行驱动（">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-24T11:18:41.919Z">
+<meta property="og:updated_time" content="2019-10-30T08:17:49.435Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Linux  Kernel &#x2F; BootLoader &#x2F; FS">
+<meta name="twitter:description" content="linux ( Ubuntu / Android / QT …)必须要挂载一个 FS（文件系统），但有些操作系统（如Vxworks / uC-os）就不需要。 嵌入式系统（Android）启动后，BootLoader先运行，检测内存，存储等设备，并设置好处理器等设备的时钟。设置完成后开始引导内核，也就是把zimage (内核)文件拷贝到内存中。拷贝完成后，跳进内核去执行。内核对外部设备进行驱动（">
 
 
 
@@ -128,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/23/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2019/10/30/Linux_concept/">
 
 
 
 
 
-  <title>Hello World | Arturo</title>
+  <title>Linux  Kernel / BootLoader / FS | Arturo</title>
   
 
 
@@ -281,7 +280,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/23/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/30/Linux_concept/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dream Catcher">
@@ -298,7 +297,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Linux  Kernel / BootLoader / FS</h1>
         
 
         <div class="post-meta">
@@ -310,8 +309,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-23T14:53:47+08:00">
-                2019-03-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-30T16:14:06+08:00">
+                2019-10-30
               </time>
             
 
@@ -329,8 +328,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/03/23/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/23/hello-world/" itemprop="commentCount"></span>
+                <a href="/2019/10/30/Linux_concept/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/10/30/Linux_concept/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -358,15 +357,75 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p> <strong>linux</strong> ( Ubuntu / Android / QT …)必须要挂载一个 <strong>FS（文件系统）</strong>，但有些操作系统（如Vxworks / uC-os）就不需要。<br> 嵌入式系统（Android）启动后，BootLoader先运行，检测内存，存储等设备，并设置好处理器等设备的时钟。设置完成后开始引导内核，也就是把zimage (内核)文件拷贝到内存中。拷贝完成后，跳进内核去执行。内核对外部设备进行驱动（蓝牙 / WIFI / SPI …）初始化，摸摸每个外设的脑袋，叫他们准备好，最后挂载文件系统，并执行文件系统的应用程序。执行一个个应用程序，安卓的界面就出来了。Android其实就是跑在Linux上的一个巨大应用程序。</p>
+<h3 id="BootLoader-（引导程序）"><a href="#BootLoader-（引导程序）" class="headerlink" title="BootLoader （引导程序）"></a>BootLoader （引导程序）</h3><blockquote>
+</blockquote>
+<p>在<strong>嵌入式操作系统</strong>中，<strong>BootLoader</strong>是在操作系统<strong>内核</strong>运行之前运行。可以初始化硬件设备、建立内存空间映射图，从而将系统的软硬件环境带到一个合适状态，以便为最终调用操作系统内核准备好正确的环境。在嵌入式系统中，通常并没有像<strong>BIOS</strong>那样的固件程序（注，有的嵌入式CPU也会内嵌一段短小的启动程序），因此整个系统的加载启动任务就完全由BootLoader来完成。在一个基于ARM7TDMI core的嵌入式系统中，系统在上电或复位时通常都从地址0x00000000处开始执行，而在这个地址处安排的通常就是系统的BootLoader程序。    —<a href="https://baike.baidu.com/item/BootLoader" target="_blank" rel="noopener">百度百科</a></p>
+<h4 id="常用的-BootLoader"><a href="#常用的-BootLoader" class="headerlink" title="常用的 BootLoader"></a>常用的 BootLoader</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">BootLoader</th>
+<th style="text-align:center">Description</th>
+<th style="text-align:center">X86</th>
+<th style="text-align:center">ARM</th>
+<th style="text-align:center">PpwerPC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>U-Boot</strong></td>
+<td style="text-align:center">通用引导程序</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">LILO</td>
+<td style="text-align:center">Linux磁盘引导程序</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">BLOB</td>
+<td style="text-align:center">LART等硬件平台的引导程序</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+</tr>
+<tr>
+<td style="text-align:center">Etherboot</td>
+<td style="text-align:center">通过以太网卡启动Linux而不需要BIOS</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">RedBoot</td>
+<td style="text-align:center">基于eCos的引导程序</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">Vivi</td>
+<td style="text-align:center">Mizi公司针对SAMSUNG的ARM CPU设计的引导程序</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">否</td>
+</tr>
+</tbody>
+</table>
+<h4 id="U-Boot"><a href="#U-Boot" class="headerlink" title="U-Boot"></a>U-Boot</h4><blockquote>
+<p>U-Boot是最大的裸机程序，有协议栈，有文件系统。但是<strong>没有多任务运行机制</strong>，<strong>不能实现任务调度</strong>等操作系统应用的功能。</p>
+</blockquote>
+<h3 id="Linux-Kernel-（内核）"><a href="#Linux-Kernel-（内核）" class="headerlink" title="Linux Kernel （内核）"></a>Linux Kernel （内核）</h3><blockquote>
+<p>操作系统是一个用来和硬件打交道并为用户程序提供一个有限服务集的低级支撑软件。一个计算机系统是一个硬件和软件的共生体，它们互相依赖，不可分割。计算机的硬件，含有外围设备、处理器、内存、硬盘和其他的电子设备组成计算机的发动机。但是没有<strong>软件</strong>来<strong>操作和控制</strong>它，自身是不能工作的。完成这个控制工作的软件就称为操作系统，在Linux的术语中被称为“内核”，也可以称为“核心”。Linux内核的主要模块（或组件）分以下几个部分：<strong>存储管理、CPU和进程管理、文件系统、设备管理和驱动、网络通信，以及系统的初始化（引导）、系统调用</strong>等。       —<a href="https://baike.baidu.com/item/Linux内核/10142820" target="_blank" rel="noopener">百度百科</a></p>
+</blockquote>
+<h3 id="FS（文件系统）"><a href="#FS（文件系统）" class="headerlink" title="FS（文件系统）"></a>FS（文件系统）</h3><blockquote>
+</blockquote>
+<p><strong>文件系统</strong>是操作系统用于明确存储设备（常见的是磁盘，也有基于NAND Flash的固态硬盘）或分区上的文件的方法和数据结构；即在存储设备上组织文件的方法。操作系统中负责管理和存储文件信息的软件机构称为文件管理系统，简称文件系统。文件系统由三部分组成：文件系统的接口，对对象操纵和管理的软件集合，对象及属性。从系统角度来看，文件系统是对文件存储设备的空间进行组织和分配，负责文件存储并对存入的文件进行保护和检索的系统。具体地说，它负责为用户建立文件，存入、读出、修改、转储文件，控制文件的存取，当用户不再使用时撤销文件等。    —<a href="https://baike.baidu.com/item/文件系统" target="_blank" rel="noopener">百度百科</a></p>
+<h3 id="加油站"><a href="#加油站" class="headerlink" title="加油站"></a>加油站</h3><p>U-Boot ，Kernel ，FS ，是嵌入式系统的基本概念，理解之后就明白了嵌入式系统的启动过程。为之后学习编译下载U-Boot，Kernel，FS打好基础。去者，往矣；然来者可期，今者，当一骑绝尘。 每天起床第一句，先给自己打个气 : Music<a href="https://baike.baidu.com/item/我怎么这么好看/22775932" target="_blank" rel="noopener">《我怎么这么好看》</a>！</p>
 
       
     </div>
@@ -382,12 +441,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
-          
-        </div>
-      
 
       
       
@@ -397,15 +450,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/08/11/WIFI/" rel="next" title="WiFi你真的了解吗？">
+                <i class="fa fa-chevron-left"></i> WiFi你真的了解吗？
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/24/markdown/" rel="prev" title="Markdown基本语法">
-                Markdown基本语法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -569,7 +622,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#BootLoader-（引导程序）"><span class="nav-number">1.</span> <span class="nav-text">BootLoader （引导程序）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用的-BootLoader"><span class="nav-number">1.1.</span> <span class="nav-text">常用的 BootLoader</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#U-Boot"><span class="nav-number">1.2.</span> <span class="nav-text">U-Boot</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-Kernel-（内核）"><span class="nav-number">2.</span> <span class="nav-text">Linux Kernel （内核）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FS（文件系统）"><span class="nav-number">3.</span> <span class="nav-text">FS（文件系统）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加油站"><span class="nav-number">4.</span> <span class="nav-text">加油站</span></a></li></ol></div>
             
 
           </div>
@@ -760,9 +813,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2019/03/23/hello-world/';
-          this.page.identifier = '2019/03/23/hello-world/';
-          this.page.title = 'Hello World';
+          this.page.url = 'http://yoursite.com/2019/10/30/Linux_concept/';
+          this.page.identifier = '2019/10/30/Linux_concept/';
+          this.page.title = 'Linux  Kernel / BootLoader / FS';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://Disqus Short Name.disqus.com/embed.js';
