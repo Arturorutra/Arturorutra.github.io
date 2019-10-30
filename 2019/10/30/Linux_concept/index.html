@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="Arturo">
 <meta property="og:description" content="linux ( Ubuntu / Android / QT …)必须要挂载一个 FS（文件系统），但有些操作系统（如Vxworks / uC-os）就不需要。 嵌入式系统（Android）启动后，BootLoader先运行，检测内存，存储等设备，并设置好处理器等设备的时钟。设置完成后开始引导内核，也就是把zimage (内核)文件拷贝到内存中。拷贝完成后，跳进内核去执行。内核对外部设备进行驱动（">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-30T08:17:49.435Z">
+<meta property="og:updated_time" content="2019-10-30T08:50:13.070Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux  Kernel &#x2F; BootLoader &#x2F; FS">
 <meta name="twitter:description" content="linux ( Ubuntu / Android / QT …)必须要挂载一个 FS（文件系统），但有些操作系统（如Vxworks / uC-os）就不需要。 嵌入式系统（Android）启动后，BootLoader先运行，检测内存，存储等设备，并设置好处理器等设备的时钟。设置完成后开始引导内核，也就是把zimage (内核)文件拷贝到内存中。拷贝完成后，跳进内核去执行。内核对外部设备进行驱动（">
@@ -359,8 +359,8 @@
       
         <p> <strong>linux</strong> ( Ubuntu / Android / QT …)必须要挂载一个 <strong>FS（文件系统）</strong>，但有些操作系统（如Vxworks / uC-os）就不需要。<br> 嵌入式系统（Android）启动后，BootLoader先运行，检测内存，存储等设备，并设置好处理器等设备的时钟。设置完成后开始引导内核，也就是把zimage (内核)文件拷贝到内存中。拷贝完成后，跳进内核去执行。内核对外部设备进行驱动（蓝牙 / WIFI / SPI …）初始化，摸摸每个外设的脑袋，叫他们准备好，最后挂载文件系统，并执行文件系统的应用程序。执行一个个应用程序，安卓的界面就出来了。Android其实就是跑在Linux上的一个巨大应用程序。</p>
 <h3 id="BootLoader-（引导程序）"><a href="#BootLoader-（引导程序）" class="headerlink" title="BootLoader （引导程序）"></a>BootLoader （引导程序）</h3><blockquote>
-</blockquote>
 <p>在<strong>嵌入式操作系统</strong>中，<strong>BootLoader</strong>是在操作系统<strong>内核</strong>运行之前运行。可以初始化硬件设备、建立内存空间映射图，从而将系统的软硬件环境带到一个合适状态，以便为最终调用操作系统内核准备好正确的环境。在嵌入式系统中，通常并没有像<strong>BIOS</strong>那样的固件程序（注，有的嵌入式CPU也会内嵌一段短小的启动程序），因此整个系统的加载启动任务就完全由BootLoader来完成。在一个基于ARM7TDMI core的嵌入式系统中，系统在上电或复位时通常都从地址0x00000000处开始执行，而在这个地址处安排的通常就是系统的BootLoader程序。    —<a href="https://baike.baidu.com/item/BootLoader" target="_blank" rel="noopener">百度百科</a></p>
+</blockquote>
 <h4 id="常用的-BootLoader"><a href="#常用的-BootLoader" class="headerlink" title="常用的 BootLoader"></a>常用的 BootLoader</h4><table>
 <thead>
 <tr>
@@ -423,8 +423,8 @@
 <p>操作系统是一个用来和硬件打交道并为用户程序提供一个有限服务集的低级支撑软件。一个计算机系统是一个硬件和软件的共生体，它们互相依赖，不可分割。计算机的硬件，含有外围设备、处理器、内存、硬盘和其他的电子设备组成计算机的发动机。但是没有<strong>软件</strong>来<strong>操作和控制</strong>它，自身是不能工作的。完成这个控制工作的软件就称为操作系统，在Linux的术语中被称为“内核”，也可以称为“核心”。Linux内核的主要模块（或组件）分以下几个部分：<strong>存储管理、CPU和进程管理、文件系统、设备管理和驱动、网络通信，以及系统的初始化（引导）、系统调用</strong>等。       —<a href="https://baike.baidu.com/item/Linux内核/10142820" target="_blank" rel="noopener">百度百科</a></p>
 </blockquote>
 <h3 id="FS（文件系统）"><a href="#FS（文件系统）" class="headerlink" title="FS（文件系统）"></a>FS（文件系统）</h3><blockquote>
-</blockquote>
 <p><strong>文件系统</strong>是操作系统用于明确存储设备（常见的是磁盘，也有基于NAND Flash的固态硬盘）或分区上的文件的方法和数据结构；即在存储设备上组织文件的方法。操作系统中负责管理和存储文件信息的软件机构称为文件管理系统，简称文件系统。文件系统由三部分组成：文件系统的接口，对对象操纵和管理的软件集合，对象及属性。从系统角度来看，文件系统是对文件存储设备的空间进行组织和分配，负责文件存储并对存入的文件进行保护和检索的系统。具体地说，它负责为用户建立文件，存入、读出、修改、转储文件，控制文件的存取，当用户不再使用时撤销文件等。    —<a href="https://baike.baidu.com/item/文件系统" target="_blank" rel="noopener">百度百科</a></p>
+</blockquote>
 <h3 id="加油站"><a href="#加油站" class="headerlink" title="加油站"></a>加油站</h3><p>U-Boot ，Kernel ，FS ，是嵌入式系统的基本概念，理解之后就明白了嵌入式系统的启动过程。为之后学习编译下载U-Boot，Kernel，FS打好基础。去者，往矣；然来者可期，今者，当一骑绝尘。 每天起床第一句，先给自己打个气 : Music<a href="https://baike.baidu.com/item/我怎么这么好看/22775932" target="_blank" rel="noopener">《我怎么这么好看》</a>！</p>
 
       
